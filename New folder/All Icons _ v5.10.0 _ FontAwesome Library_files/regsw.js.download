@@ -1,0 +1,13 @@
+// 判断浏览器是否支持 Service Worker
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+        // 注册 Service Worker
+        navigator.serviceWorker.register('/sw.js')
+            .then(function (registration) {
+                console.log('sw.js reg ok', registration.scope);
+            })
+            .catch(function (err) {
+                console.log('sw.js reg fail ', err);
+            });
+    });
+}

@@ -1,0 +1,300 @@
+body{
+    background-image: url(backgroungphoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif ;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.header{
+    background-color: rgb(255, 249, 225);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 10px 10px;
+
+}
+.logotextandimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoimage{
+    width: 4rem;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.logotext{
+    font-size: 25px;
+    margin: 0px;
+    
+}
+.ulmenu {
+    display: flex;
+    margin: 0;
+   
+}
+.ulmenu a {
+    margin-right: 30px;
+    color: rgb(175, 140, 24);
+    text-transform: capitalize;
+    transition: all .42s ease;
+}
+.ulmenu a:hover{
+    color: black;
+}
+
+.nav-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.nav-icon a{
+    color: rgb(175, 140, 24);
+}
+.nav-icon .btn{
+  border: 2px solid rgb(175, 140, 24);
+  padding: 5px;
+  background-color: rgb(175, 140, 24);
+  color: white;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  transition: all .42s ease;
+  margin-right: 15px;
+}
+.nav-icon .btn:hover{
+    transform: scale(1.1);
+}
+.iconmenu i:hover{
+    transform: scale(1.5);
+}
+/*Responsive design */
+@media(max-width:945px){
+    header{
+        padding: 20px 3%;
+        transition: .3s;
+    }
+}
+@media(max-width:1140px){
+    .home{
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+ 
+}
+section{
+    padding: 60px 15%;
+}
+.homeimage1{
+    width: 30vw;
+    background-image: transparent;
+    border-radius: 50px;
+}
+.homeimage1:hover{
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.home-text{
+    display: inline-block;
+}
+.home-image{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.home-text h1 {
+  color: rgb(236, 225, 225);
+  font-size: 35px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 4px;
+}
+.home-text h4 {
+    color: rgb(243, 182, 13);
+    letter-spacing: -1px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+.home-text p {
+    color: rgb(156, 154, 154);
+    font-size: 17px;
+}
+.main-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1{
+    color: rgb(243, 182, 13);
+    transition: all .42s ease;
+    text-transform: capitalize;
+    margin-right: 10px;
+    
+}
+.btn1:active{
+    color: white;
+}
+.btn2{
+    color: rgb(243, 182, 13);
+    transition: all .42s ease;
+    text-transform: capitalize;
+}
+.btn2 span i{
+    width: 50px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .42s ease;
+}
+.btn2 span i:hover{
+    transform: translateY(-5px);
+}
+.btn2:active{
+    color: white;
+}
+@media(max-width:855px){
+    .iconmenu{
+        display: block;
+    }
+}
+.menu-page{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    font-family: inherit;
+    background-image: url(food-menu-background-94222.jpg) ;
+    background-color: rgb(219, 205, 149);
+    padding: 30px 40px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-width: 20px 0px;
+    border-color: antiquewhite;
+}
+.firstmeal , .secondmeal , 
+.thirdmeal , .fourmeal , .fifthmeal
+,.sixthmeal{
+    padding: 100px ;
+    background-color: black;
+    color: white;
+    border-style: groove;
+    border-color: hsl(56, 83%, 45%);
+    border-width: 4px;
+    
+}
+.firstmeal{
+    background-image: url(kebab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.firstmeal p , .secondmeal p, 
+.thirdmeal p, .fourmeal p, .fifthmeal p
+,.sixthmeal p{
+    background-color: hsla(210, 10%, 36%, 0.568);
+}
+.secondmeal{
+    background-image: url(burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.thirdmeal{
+    background-image: url(soup.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fourmeal{
+    background-image: url(sushi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fifthmeal{
+    background-image: url(polish\ traditional\ food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sixthmeal{
+    background-image: url(pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 5rem;
+    color: rgb(190, 181, 169);
+    background-color: hsl(0, 0, 26%);
+}
+.footervebservise , .footerstudentdiscount , .footertext , .creator{
+border-right: solid 2px;
+font-family: inherit;
+font-size: 1.4rem;
+text-align: center;
+
+}
+.footervebservise a:first-child{
+    color: hsl(195, 4%, 82%);
+    display: block;
+    text-align: center;
+    margin: 0.5rem;
+}
+.footervebservise a:last-child{
+    color: rgba(240, 196, 193, 0.966);
+    text-align: center;
+    display: block;
+    margin: 0.5rem;
+
+}
+.envelope span i{
+    color:blue;
+    margin-right: 5px;
+    transition: all .42s ease;
+}
+.envelope span i:hover{
+    transform: translateY(-5px);
+}
+.instagram span i{
+    color: hsla(0, 100%, 49%, 0.877);
+    margin-right: 5px;
+    transition: all .42s ease;
+} 
+.telephone{
+    margin: 0px;
+    margin-top: 5px;
+}
+.telephone span i{
+    color: rgb(13, 196, 13);
+    margin-right: 5px;
+    transition: all .42s ease;
+}
+.creator span{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+}
+.footerstudentdiscount span{
+    color: white;
+    font-family: fantasy;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+}
